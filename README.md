@@ -55,3 +55,9 @@ numpy
 matplotlib
 seaborn
 scikit-learn
+
+
+👤 Autor
+Caio Santos de Almeida
+
+📧 caiosantal.cd@gmail.com 🔗 LinkedIn 🐙 GitHub
