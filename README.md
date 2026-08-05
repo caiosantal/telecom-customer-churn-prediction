@@ -25,23 +25,23 @@ O objetivo é transformar análises preditivas em ações operacionais de reten�
 
 O projeto está organizado nas seguintes etapas:
 
-1. **Formulação do problema** – Definição dos objetivos de negócio e escolha das métricas principais (*Recall*, *ROC AUC*).
-2. **Leitura e compreensão dos dados** – Mapeamento inicial das 21 colunas brutas e 7.043 registros.
-3. **Limpeza e Pré-processamento:**
+1. **Formulação do Problema e Leitura dos Dados:** Definição dos objetivos de negócio e mapeamento inicial do dataset (21 colunas brutas e 7.043 registros).
+2. **Limpeza e Pré-processamento:**
    * Remoção de colunas não preditivas ou com risco de *data leakage* (`customerID`, `gender`, `TotalCharges`).
-   * Verificação e tratamento de dados ausentes.
-   * *One-Hot Encoding* (`pd.get_dummies`) para variáveis categóricas.
-   * Padronização de variáveis contínuas com `StandardScaler` (`tenure`, `MonthlyCharges`).
-4. **Análise Exploratória (EDA):**
-   * Análise de distribuição das variáveis numéricas contínuas.
-   * Cálculo da Correlação de Pearson em relação à variável alvo `Churn_Yes`.
-   * Matriz de correlação cruzada (*Heatmap*).
-5. **Modelagem e Avaliação:**
-   * **Regressão Logística (Baseline):** Configuração padrão (limiar 0.50).
-   * **Regressão Logística (`balanced`):** Ajuste de pesos por classe desbalanceada.
-   * **Regressão Logística (Limiar Customizado - 35%):** Calibração operacional para contenção de alarmes falsos.
-   * **Random Forest (`balanced`):** Modelo *ensemble* para capturar relações não lineares complexas.
-6. **Conclusão e Diagnóstico de Negócio** – Interpretação dos resultados operacionais.
+   * Verificação e confirmação de ausência de dados nulos.
+   * Aplicação de *One-Hot Encoding* (`pd.get_dummies`) para conversão de variáveis categóricas em binárias.
+3. **Divisão dos Dados (Treino e Teste):** Divisão da base em 80% para treinamento e 20% para teste, utilizando amostragem estratificada (`stratify=y`) para preservar a proporção da classe alvo.
+4. **Normalização (Escalonamento):** Padronização das variáveis numéricas contínuas (`tenure` e `MonthlyCharges`) via `StandardScaler`, ajustando o *scaler* exclusivamente nos dados de treino.
+5. **Análise Descritiva e Correlação:**
+   * Análise de distribuição das variáveis numéricas (*tenure* e *MonthlyCharges*).
+   * Cálculo da Correlação de Pearson individual em relação à variável alvo (`Churn_Yes`).
+   * Visualização da Matriz de Correlação Cruzada (*Heatmap*).
+6. **Modelagem e Avaliação:**
+   * **Regressão Logística (Baseline):** Configuração padrão com limiar de decisão em 0.50.
+   * **Regressão Logística (`balanced`):** Penalização por pesos de classe para compensar o desbalanceamento dos dados.
+   * **Regressão Logística (Limiar Customizado - 35%):** Reajuste do limiar operacional para redução de falsos negativos.
+   * **Random Forest (`balanced`):** Algoritmo *ensemble* não linear para capturar interações complexas entre atributos.
+7. **Conclusão e Diagnóstico de Negócio:** Avaliação comparativa das métricas (*Recall* e *ROC AUC*) e recomendação de ações operacionais para retenção de clientes.
 
 ---
 
