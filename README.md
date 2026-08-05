@@ -56,8 +56,13 @@ matplotlib
 seaborn
 scikit-learn
 
+````
 
-👤 Autor
+---
+
+## 👤 Autor
 Caio Santos de Almeida
 
-📧 caiosantal.cd@gmail.com 🔗 LinkedIn 🐙 GitHub
+📧 caiosantal.cd@gmail.com
+🔗 [LinkedIn](https://www.linkedin.com/in/caiosantal/)
+🐙 [GitHub](https://github.com/caiosantal)
