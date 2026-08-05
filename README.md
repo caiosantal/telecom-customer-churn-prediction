@@ -2,7 +2,6 @@
 
 Classificação e previsão de cancelamento de clientes (*Churn*) em telecomunicações — um projeto completo de machine learning focado na retenção de clientes, cobrindo análise exploratória, tratamento do desbalanceamento de dados e comparação de modelos.
 
----
 
 ## 📖 Sobre o Projeto
 
@@ -10,7 +9,6 @@ O *Churn* (cancelamento de serviço) é um dos maiores desafios estratégicos em
 
 O objetivo é transformar análises preditivas em ações operacionais de retenção, fornecendo diagnósticos claros sobre os fatores que impulsionam o cancelamento.
 
----
 
 ## 🎯 Objetivo
 
@@ -19,7 +17,6 @@ O objetivo é transformar análises preditivas em ações operacionais de reten�
 * **Tratar o Desbalanceamento de Dados:** Comparar técnicas como pesos de classe (`class_weight='balanced'`) e ajuste de limiar de decisão (*decision threshold*).
 * **Entregar Valor ao Negócio:** Identificar os principais ofensores operacionais (ex: tipos de contrato, meios de pagamento e planos).
 
----
 
 ## 📁 Estrutura do Projeto
 
@@ -42,8 +39,7 @@ O projeto está organizado nas seguintes etapas:
    * **Regressão Logística (Limiar Customizado - 35%):** Reajuste do limiar operacional para redução de falsos negativos.
    * **Random Forest (`balanced`):** Algoritmo *ensemble* não linear para capturar interações complexas entre atributos.
 7. **Conclusão e Diagnóstico de Negócio:** Avaliação comparativa das métricas (*Recall* e *ROC AUC*) e recomendação de ações operacionais para retenção de clientes.
-
----
+   
 
 ## 📂 Dados
 
@@ -54,7 +50,6 @@ O projeto está organizado nas seguintes etapas:
    * **Leitura dos dados:** `pd.read_excel(...)` ou `pd.read_csv(...)`
    * **Exportação dos resultados:** `.to_csv(...)` ou `.to_excel(...)`
 
----
 
 ## 🛠️ Pré-requisitos e Instalação
 
@@ -69,7 +64,6 @@ scikit-learn
 
 ````
 
----
 
 ## 👤 Autor
 Caio Santos de Almeida
