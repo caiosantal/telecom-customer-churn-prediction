@@ -1,6 +1,6 @@
 # 📶 Telecom Churn - Projeto de Ciência de Dados
 
-Classificação e previsão de cancelamento de clientes (*Churn*) em telecomunicações — um projeto completo de machine learning focado na retenção proativa, cobrindo análise exploratória, tratamento do desbalanceamento de dados e comparação de modelos.
+Classificação e previsão de cancelamento de clientes (*Churn*) em telecomunicações — um projeto completo de machine learning focado na retenção de clientes, cobrindo análise exploratória, tratamento do desbalanceamento de dados e comparação de modelos.
 
 ---
 
