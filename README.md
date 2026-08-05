@@ -3,6 +3,7 @@
 > Classificação e previsão de cancelamento de clientes (*Churn*) em telecomunicações — um projeto completo de machine learning focado na retenção de clientes, cobrindo análise exploratória, tratamento do desbalanceamento de dados e comparação de modelos.
 > 
 <img src="https://insidetelecom.com/wp-content/uploads/2020/11/Telecom-operators-and-reducing-customer-churn-1024x576.jpg" width="600" style="display: block; margin: 0 auto; border-radius: 0px;">
+
 ## 📖 Sobre o Projeto
 
 O *Churn* (cancelamento de serviço) é um dos maiores desafios estratégicos em empresas de telecomunicações. Adquirir um novo cliente pode custar até 5 vezes mais do que reter um já existente. Este projeto utiliza dados reais de clientes para construir um pipeline de Ciência de Dados capaz de identificar antecipadamente perfis de alto risco.
