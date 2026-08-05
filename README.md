@@ -47,7 +47,7 @@ O projeto está organizado nas seguintes etapas:
 
 ## 📂 Dados
 
-1. Faça o download do arquivo **`Telco_customer_churn.xlsx`** disponível no [Kaggle]([https://www.kaggle.com/competitions/titanic/data](https://www.kaggle.com/datasets/yeanzc/telco-customer-churn-ibm-dataset))(base original da IBM).
+1. Faça o download do arquivo **`Telco_customer_churn.xlsx`** disponível no [Kaggle]([https://www.kaggle.com/competitions/titanic/data](https://www.kaggle.com/datasets/yeanzc/telco-customer-churn-ibm-dataset)) (base original da IBM).
 2. Salve os arquivos em uma pasta no seu **Google Drive**.
 * **Estrutura recomendada no Drive:** `dados/telecom_churn/` (ficando no caminho `/content/drive/My Drive/dados/telecom_churn/`).
 3. **Atenção:** Se optar por salvar em um diretório diferente, lembre-se de atualizar os caminhos no notebook onde os arquivos são lidos e salvos:
